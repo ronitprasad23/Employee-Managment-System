@@ -1,1 +1,18 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete-User</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h3>To delete this user : <%=user.email%>, Enter your password</h3>
+    <form  method="POST" action="/user/<%=user.id%>?_method=DELETE">
+        <input type="Enter password to delete" class="text" name="password" placeholder="Enter-password">
+        <br>
+        <button class="btn btn-danger bt">Delete</button>
+    </form>
+</body>
+</html>
