@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Add New-User</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>
+        Add New User:
+    </h2>
+    <form  method="POST" action="/user/new">
+        <input type="username" name="username" class="text" placeholder="Enter username">
+        <br>
+        <input type="email" name="email" class="text" placeholder="Enter Email">
+        <br>
+        <input type="password" name="password" class="text" placeholder="Enter Password">
+        <br>
+        <button class="btn btn-success bt">Submit</button>
+    </form>
+</body>
+</html>
